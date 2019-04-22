@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.App {
+  display: flex;
+  flex-direction: row;
+}
+.todolist-left {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  width: 20%;
+  background-color: gray;
+}
+
+.todolist-right {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding : 10px;
+}
+.search-div {
+  width: 100%;
+  text-align: center;
+}
+.search-input {
+  width: 90%;
+  height: 20px;
+  border: 0.5px;
+  margin: 10px 0 10px 0;
+  font-size: 12px;
+}
+.search-input:focus {
+  outline: none;
+}
+.subject-list {
+  width: 100%;
+  text-align: center;
+}
+.subject-entry {
+  width: 90%;
+  height: 20px;
+  font-size: 15px;
+  border-style: none none solid none;
+  font-weight: bold; 
+  background-color: gray;
+}
+.subject-entry:hover {
+  cursor: pointer;
+}
+.subject-entry:focus {
+  outline: none;
+}
+.insert-subject {
+  width: 20%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+}
+.insert-subject-button {
+  display: inline-block;
+  width: 90%;
+  height: 30px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.insert-todo-button {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.subject {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
+}
+.subject-title {
+  font-size: 50px;
+  font-weight: bold; 
+}
+.todo-list{
+} 
+.todo-entry {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+.todo-entry-text {
+  border: none;
+  box-shadow: none;
+  width: 90%;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 5px;
+  background-color: none;
+}
+.todo-entry-text:hover {
+  cursor: default;
+  background-color: lightgray;
+}
+.todo-entry-text:focus {
+  outline: none;
+}
+.todo-entry:focus {
+  outline: none;
+}
+.complete-entry {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+.complete-entry-text {
+  border: none;
+  box-shadow: none;
+  width: 90%;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 5px;
+  background-color: none;
+  text-decoration : line-through;
+}
+.complete-entry-text:hover {
+  cursor: default;
+  background-color: lightgray;
+}
+.complete-entry-text:focus {
+  outline: none;
+}
+.complete-entry:focus {
+  outline: none;
+}
+.delete-todo-entry {
+  margin: 1px;
+  background-color: white;
+  border-color: black;
+}
